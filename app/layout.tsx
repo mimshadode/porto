@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://mimshad.vercel.app"),
+  metadataBase: new URL("https://mimshadode.vercel.app"),
   title: "Mimshad Portfolio",
   description:
     "Personal playground of Mimshad—crafting reliable full-stack builds and clean interfaces with purpose.",
@@ -21,11 +21,11 @@ export const metadata = {
     title: "Mimshad Portfolio | Full Stack Developer",
     description:
       "Explore full-stack work by Mimshad. Clean interfaces, modern web engineering, and performance-focused builds.",
-    url: "https://mimshad.vercel.app",
+    url: "https://mimshadode.vercel.app",
     siteName: "Mimshad Portfolio",
     images: [
       {
-        url: "https://mimshad.vercel.app/bg2.png",
+        url: "https://mimshadode.vercel.app/bg2.png",
         width: 1200,
         height: 630,
         alt: "Mimshad Portfolio Open Graph Image",
