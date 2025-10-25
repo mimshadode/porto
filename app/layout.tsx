@@ -13,25 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mimshad.vercel.app";
-const ogImage = `${siteUrl}/bg2.jpg`; // ✅ static image
+const ogImage = `${siteUrl}/bg2.png`;
+const shareTitle = "Mimshad Portfolio · Spotify-style Visual Drop";
+const shareDescription =
+  "Tap to explore Mimshad's full-stack projects—curated like a Spotify release so WhatsApp chats and statuses show an eye-catching preview.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Mimshad Portofolio",
-  description:
-    "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
+  title: shareTitle,
+  description: shareDescription,
   openGraph: {
-    title: "Mimshad Portofolio | Full-Stack Developer",
-    description:
-      "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
+    title: shareTitle,
+    description: shareDescription,
     url: siteUrl,
-    siteName: "Mimshad Portofolio",
+    siteName: "Mimshad Portfolio",
     images: [
       {
-        url: "https://mimshad.vercel.app/bg2.png",
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Mimshad Portofolio",
+        alt: "Mimshad Portfolio Spotify-style card",
       },
     ],
     locale: "id_ID",
@@ -39,9 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mimshad Portofolio",
-    description:
-      "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
+    title: shareTitle,
+    description: shareDescription,
     images: [ogImage],
   },
   robots: {
