@@ -12,48 +12,46 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://mimshad.vercel.app";
-const ogImage = `${siteUrl}/bg2.png`;
-const shareTitle = "Mimshad Portfolio";
-const shareDescription =
-  "Tap to explore Mimshad's full-stack projects—curated like a Spotify release so WhatsApp chats and statuses show an eye-catching preview.";
-
-export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: shareTitle,
-  description: shareDescription,
+export const metadata = {
+  metadataBase: new URL("https://mimshad.vercel.app"),
+  title: "Mimshad Portfolio",
+  description:
+    "Personal playground of Mimshad—crafting reliable full-stack builds and clean interfaces with purpose.",
   openGraph: {
-    title: shareTitle,
-    description: shareDescription,
-    url: siteUrl,
+    title: "Mimshad Portfolio | Full Stack Developer",
+    description:
+      "Explore full-stack work by Mimshad. Clean interfaces, modern web engineering, and performance-focused builds.",
+    url: "https://mimshad.vercel.app",
     siteName: "Mimshad Portfolio",
     images: [
       {
-        url: ogImage,
+        url: "https://mimshad.vercel.app/bg2.png",
         width: 1200,
         height: 630,
-        alt: "Mimshad Portfolio",
+        alt: "Mimshad Portfolio Open Graph Image",
       },
     ],
-    locale: "id_ID",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: shareTitle,
-    description: shareDescription,
-    images: [ogImage],
+    title: "Mimshad Portfolio",
+    description:
+      "Modern and clean full-stack web projects by Mimshad. Built with Next.js, TypeScript, and TailwindCSS.",
+    images: ["https://mimshad.vercel.app/bg2.png"],
+  },
+  other: {
+    "whatsapp:title": "Mimshad Portfolio",
+    "whatsapp:description":
+      "Clean UI. Better code. Purposeful engineering. Explore my work 🚀",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
   },
 };
+
 
 
 export default function RootLayout({
