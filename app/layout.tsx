@@ -12,11 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mimshad.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://digital.vitee.id";
+const brandName = "vitee.id";
+const invitationNames = "Astri & Risal";
+const recipient = "Keluarga La Ode Makasa";
 const ogImage = `${siteUrl}/bg2.png`;
-const shareTitle = "Mimshad Portfolio · Spotify-style Visual Drop";
-const shareDescription =
-  "Tap to explore Mimshad's full-stack projects—curated like a Spotify release so WhatsApp chats and statuses show an eye-catching preview.";
+const shareTitle = `${invitationNames} - ${brandName}`;
+const shareDescription = `Kepada Yth. Bapak/Ibu/Saudara/i ${recipient}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -26,13 +28,13 @@ export const metadata: Metadata = {
     title: shareTitle,
     description: shareDescription,
     url: siteUrl,
-    siteName: "Mimshad Portfolio",
+    siteName: brandName,
     images: [
       {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Mimshad Portfolio Spotify-style card",
+        alt: `${invitationNames} invitation cover`,
       },
     ],
     locale: "id_ID",
