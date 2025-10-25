@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Mimshad Portfolio",
     images: [
       {
-        url: "https://mimshadode.vercel.app/bg2.png",
+        url: "https://mimshadode.vercel.app/bg.jpg",
         width: 1200,
         height: 630,
         alt: "Mimshad Portfolio Open Graph Image",
