@@ -12,20 +12,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const ogImage = `${siteUrl}/bg2.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   title: "Mimshad Portofolio",
   description:
     "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
   openGraph: {
-    title: "Mimshad Portofolio",
+    title: "Mimshad Portofolio | Full-Stack Developer",
     description:
       "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
-    url: "/",
+    url: siteUrl,
     siteName: "Mimshad Portofolio",
     images: [
       {
-        url: "/bg2.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Mimshad Portofolio",
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
     title: "Mimshad Portofolio",
     description:
       "Showcase of Mimshad's full-stack work, featuring clean interfaces, polished visuals, and performant web experiences.",
-    images: ["/bg2.png"],
+    images: [ogImage],
   },
   robots: {
     index: true,
