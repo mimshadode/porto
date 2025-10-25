@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "Personal playground of Mimshad—crafting reliable full-stack builds and clean interfaces with purpose.",
   openGraph: {
-    title: "Mimshad Portfolio | Full Stack Developer",
+    title: "Mimshad Portofolio | フルスタック開発者",
     description:
       "Explore full-stack work by Mimshad. Clean interfaces, modern web engineering, and performance-focused builds.",
     url: "https://mimshadode.vercel.app",
