@@ -48,7 +48,7 @@ export default function Home() {
               Mimshad <br/>
                 <span className="relative inline-flex sm:inline">
                 <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-                <span className="relative text-black"> Portofolio </span>
+                <span className="relative text-black"> Portfolio </span>
                 </span>
             </p>
             <div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-10 sm:flex mt-9">
