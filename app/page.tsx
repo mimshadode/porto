@@ -68,7 +68,7 @@ export default function Home() {
             </div>
 
             <p className="mt-8 text-base text-gray-500 font-inter">
-              Hi, I’m a full-stack developer who loves designing clean interfaces and shipping performant web experiences.
+              Hi, I’m a full-stacksss developer who loves designing clean interfaces and shipping performant web experiences.
             </p>
           </div>
         </div>
