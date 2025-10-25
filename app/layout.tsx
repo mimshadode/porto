@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-const ogImage = `https://mimshad.vercel.app/_next/image?url=%2Fbg.jpg&w=3840&q=75`;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mimshad.vercel.app";
+const ogImage = `${siteUrl}/bg2.jpg`; // ✅ static image
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -53,6 +53,7 @@ export const metadata: Metadata = {
     },
   },
 };
+
 
 export default function RootLayout({
   children,
