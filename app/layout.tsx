@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-const ogImage = `${siteUrl}/bg2.png`;
+const ogImage = `https://mimshad.vercel.app/_next/image?url=%2Fbg.jpg&w=3840&q=75`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
